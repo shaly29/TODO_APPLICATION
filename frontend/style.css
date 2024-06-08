@@ -20,7 +20,9 @@ body {
   border: 3px solid #d58094;
   backdrop-filter: blur(15px);
 }
-
+.container h1{
+  font-size: 3rem;
+}
 .btn{
   width: 130px;
   height: 40px;
@@ -161,6 +163,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: .2rem;
 }
 
 .close-modal {
@@ -192,11 +195,6 @@ h1 {
 }
 
 /* header section */
-
-
-
-
-
 
  .header{
   background:  rgb(8, 98, 128);
@@ -286,9 +284,15 @@ color: #fff;
         padding: .5rem;
         font-size: 2rem;
     }
-
-  
-
+    .todos-container{
+      font-size: 2rem;
+    }
+    .filters{
+      font-size: 2rem;
+    }
+    .container h1{
+      font-size: 6rem;
+    }
 }
 
 @media (max-width:450px){
