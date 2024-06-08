@@ -1,0 +1,26 @@
+POST http://localhost:4007/api/todos
+Content-Type: application/json
+
+
+{
+    "item":"this is secound item"
+}
+
+###
+
+GET http://localhost:4007/api/todos
+Content-Type: application/json
+
+###
+
+PUT  http://localhost:4007/api/todos/66632a44f59ea287818dd5f3
+Content-Type: application/json
+
+{
+    "item":"this is secound item updated/"
+}
+
+###
+
+DELETE http://localhost:4007/api/todos/66632a44f59ea287818dd5f
+Content-Type: application/json
