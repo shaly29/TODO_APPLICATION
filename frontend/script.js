@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let filterStatus = 'all';
 
     const fetchTodos = async () => {
-        const response = await fetch("http://localhost:4007/api/todos");
+        const response = await fetch("https://todo-application-1.onrender.com/api/todos");
         todos = await response.json();
         renderTodos();
     };
 
     const addTodo = async (todo) => {
-        await fetch("http://localhost:4007/api/todos", {
+        await fetch("https://todo-application-1.onrender.com/api/todos", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const updateTodo = async (id, todo) => {
-        await fetch(`http://localhost:4007/api/todos/${id}`, {
+        await fetch(`https://todo-application-1.onrender.com/api/todos/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const deleteTodo = async (id) => {
-        await fetch(`http://localhost:4007/api/todos/${id}`, {
+        await fetch(`https://todo-application-1.onrender.com/api/todos/${id}`, {
             method: "DELETE"
         });
         fetchTodos();
@@ -146,7 +146,7 @@ async function register(event) {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const response = await fetch('http://localhost:4007/api/v1/signup', {
+    const response = await fetch('https://todo-application-1.onrender.com/api/v1/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -176,7 +176,7 @@ async function login(event) {
     const email = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
 
-    const response = await fetch('http://localhost:4007/api/v1/login', {
+    const response = await fetch('https://todo-application-1.onrender.com/api/v1/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
