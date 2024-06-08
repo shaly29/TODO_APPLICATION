@@ -24,3 +24,15 @@ Content-Type: application/json
 
 DELETE http://localhost:4007/api/todos/66632a44f59ea287818dd5f
 Content-Type: application/json
+
+###
+
+POST http://localhost:4007/api/v1/signup
+Content-Type: application/json
+
+
+{
+    "name":"this is secound item",
+    "email":"sddwd",
+    "password":"dwedewfe"
+}
